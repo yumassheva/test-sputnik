@@ -13,7 +13,7 @@ function Cards() {
     commercialisation and beyond.`;
   return (
     <div className="service">
-      <img className="service__bg-moon" src="./src/assets/img/moon.png"></img>
+      <img className="service__bg-moon" src="./assets/img/moon.png"></img>
       <div className="service__main">
         <div className="service__title">
           <Title titleClassName={"service__title-big"} titleText={big_title} />
@@ -24,7 +24,7 @@ function Cards() {
         </div>
         <img
           className="service__title-img"
-          src="./src/assets/img/Group 2219.png"
+          src="./assets/img/money.png"
         ></img>
       </div>
       <div className="menu_header_elipse"></div>
@@ -66,7 +66,7 @@ function Cards() {
       </div>
       <img
         className="service__img-sputnik"
-        src="./src/assets/img/Rectangle 78.png"
+        src="./assets/img/sputnik.png"
       ></img>
     </div>
   );

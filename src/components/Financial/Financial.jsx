@@ -27,10 +27,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"01"}
             />
-            <img
-              className="coin-img"
-              src="./src/assets/img/hand-coin 7.png"
-            ></img>
+            <img className="coin-img" src="./assets/img/financial1.png"></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -43,10 +40,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"02"}
             />
-            <img
-              className="coin-img"
-              src="./src/assets/img/hand-coin 16.png"
-            ></img>
+            <img className="coin-img" src="./assets/img/financial2.png"></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -59,10 +53,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"03"}
             />
-            <img
-              className="coin-img"
-              src="./src/assets/img/hand-coin 3.png"
-            ></img>
+            <img className="coin-img" src="./assets/img/financial3.png"></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -75,10 +66,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"04"}
             />
-            <img
-              className="coin-img"
-              src="./src/assets/img/hand-coin 2.png"
-            ></img>
+            <img className="coin-img" src="./assets/img/financial4.png"></img>
           </div>
           <Title titleClassName={"financial__card-title"} titleText={"IPO’s"} />
         </Card>

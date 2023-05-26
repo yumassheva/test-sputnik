@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="header">
       <a className="header__logo-box">
-        <img alt='logo' className="header__logo" src="./src/assets/img/Group 2111.svg"></img>
+        <img alt='logo' className="header__logo" src="./assets/img/logo.svg"></img>
       </a>
       <div className="header__links">
         <Link to={"/portfolio"}>{portfolio}</Link>
