@@ -13,7 +13,7 @@ function Cards() {
     commercialisation and beyond.`;
   return (
     <div className="service">
-      <img className="service__bg-moon" src="./moon.png"></img>
+      <img className="service__bg-moon" src="./test-sputnik/assets/img/moon.png"></img>
       <div className="service__main">
         <div className="service__title">
           <Title titleClassName={"service__title-big"} titleText={big_title} />
@@ -22,10 +22,7 @@ function Cards() {
             titleText={smaill_title}
           />
         </div>
-        <img
-          className="service__title-img"
-          src="./money.png"
-        ></img>
+        <img className="service__title-img" src="./money.png"></img>
       </div>
       <div className="menu_header_elipse"></div>
       <div className="service__card">
@@ -66,7 +63,7 @@ function Cards() {
       </div>
       <img
         className="service__img-sputnik"
-        src="./sputnik.png"
+        src="https://github.com/yumassheva/test-sputnik/blob/main/src/assets/img/sputnik.png"
       ></img>
     </div>
   );
