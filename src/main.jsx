@@ -5,24 +5,23 @@ import './index.css'
 import "./assets/fonts/Outfit-Regular.ttf";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/portfolio",
-    element: [
-   
-  ]
-  },
-  {
-    path: "/team",
-    element: [
-   
-    ]
-  },
-  {
-    path: "/",
-    element: <App />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/portfolio",
+      element: [],
+    },
+    {
+      path: "/team",
+      element: [],
+    },
+    {
+      path: "/",
+      element: <App />,
+    },
+  ],
+  { basename: import.meta.env.DEV ? "/" : "/react-vite-gh-pages/" }
+);
 ReactDOM.createRoot(document.getElementById("root")).render(
    <React.StrictMode>
     <RouterProvider router={router} />
