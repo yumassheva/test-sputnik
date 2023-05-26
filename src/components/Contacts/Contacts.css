@@ -58,7 +58,7 @@ text-transform: uppercase;
     right: 99px;
     width: 160px;
 height: 251px;
-background-image: url("./assets/img/contacts.svg");
+background-image: url("./contacts.svg");
 background-size: contain;
 background-repeat: no-repeat;
 }

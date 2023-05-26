@@ -8,7 +8,7 @@ function CorporateManagment() {
     <div className="managment">
       <img
         className="managment__img-city"
-        src="./assets/img/city.png"
+        src="./city.png"
       ></img>
       <div className="managment__card-block">
         <Card className="managment__card managment__card-gold">

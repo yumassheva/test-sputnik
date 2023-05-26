@@ -27,7 +27,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"01"}
             />
-            <img className="coin-img" src="./assets/img/financial1.png"></img>
+            <img className="coin-img" src="./financial1.png"></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -40,7 +40,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"02"}
             />
-            <img className="coin-img" src="./assets/img/financial2.png"></img>
+            <img className="coin-img" src="./financial2.png"></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -53,7 +53,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"03"}
             />
-            <img className="coin-img" src="./assets/img/financial3.png"></img>
+            <img className="coin-img" src="./financial3.png"></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -66,7 +66,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"04"}
             />
-            <img className="coin-img" src="./assets/img/financial4.png"></img>
+            <img className="coin-img" src="./financial4.png"></img>
           </div>
           <Title titleClassName={"financial__card-title"} titleText={"IPO’s"} />
         </Card>
