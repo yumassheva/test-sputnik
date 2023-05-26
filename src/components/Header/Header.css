@@ -1,0 +1,45 @@
+
+.header__logo{
+ width: 122px;
+height: 98px;
+z-index: 3;
+}
+.header{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1500px;
+    padding: 60px 120px 0;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+.header__links{
+    display: flex;
+    gap:40px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+@media (max-width: 1250px) {
+.header{
+    padding: 40px 40px 0;
+}
+}
+@media (max-width: 800px) {
+    .header__logo{
+width: 50px;
+height: 40px;
+}
+    .header{
+    padding: 16px 20px 0;
+}
+.header__links{
+    gap:16px;
+    font-size: 12px;
+line-height: 18px;
+}
+}

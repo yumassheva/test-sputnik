@@ -1,0 +1,36 @@
+@font-face {
+ font-family: "Outfit";
+ src: local("Outfit"),
+  url("./assets/fonts/Outfit-Regular.ttf") format("truetype");
+}
+
+:root {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline #B09368 3px;
+}
+body {
+  background-color: #000;
+  min-width: 360px;
+  min-height: 100vh;
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+}

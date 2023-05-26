@@ -1,0 +1,82 @@
+import { outlinedInputClasses } from '@mui/material/OutlinedInput';
+import Outfit from "./fonts/Outfit-Regular.ttf";
+import { createTheme } from '@mui/material/styles';
+
+const customTheme = () =>
+  createTheme({
+    typography: {
+      fontFamily: "Outfit, sans-serif",
+    },
+    components: {
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            backgroundColor: "#B09368",
+          }
+        }
+      },
+      MuiTextField: {
+        styleOverrides: {
+          root: {
+            "--TextField-brandBorderColor": "#B09368",
+            "--TextField-brandBorderHoverColor": "#B09368",
+            "--TextField-brandBorderFocusedColor": "#B09368",
+            "& label.Mui-focused": {
+              color: "var(--TextField-brandBorderFocusedColor)",
+            },
+            "& label": {
+              color: "#fff",
+              fontSize: "14px",
+              fontWeight: "300",
+              lineHeight: "16px",
+              opacity: "0.7",
+            },
+          },
+        },
+      },
+      MuiFilledInput: {
+        styleOverrides: {
+          root: {
+            backgroundColor: "#2E2D38",
+            borderTopLeftRadius: "0",
+            borderTopRightRadius: "0",
+            "&:before, &:after": {
+              borderBottom: "2px solid var(--TextField-brandBorderColor)",
+            },
+            "&:hover:not(.Mui-disabled, .Mui-error):before": {
+              borderBottom: "2px solid var(--TextField-brandBorderHoverColor)",
+            },
+            "&.Mui-focused:after": {
+              borderBottom:
+                "2px solid var(--TextField-brandBorderFocusedColor)",
+            },
+          },
+          input: {
+            paddingBottom: "16px",
+            paddingTop: "0px",
+          }
+        },
+      },
+      MuiInput: {
+        styleOverrides: {
+          root: {
+            "&:before": {
+              borderColor: "2px solid var(--TextField-brandBorderColor)",
+            },
+            "&:hover:not(.Mui-disabled, .Mui-error):before": {
+              borderColor: "2px solid var(--TextField-brandBorderHoverColor)",
+            },
+            "&.Mui-focused:after": {
+              borderColor: "2px solid var(--TextField-brandBorderFocusedColor)",
+            },
+            "&.Mui-completed:after": {
+              borderColor: "2px solid var(--TextField-brandBorderFocusedColor)",
+            },
+          },
+        },
+      },
+    },
+  });
+
+
+  export {customTheme}
