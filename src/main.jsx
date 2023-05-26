@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import "./assets/fonts/Outfit-Regular.ttf";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider,  HashRouter } from "react-router-dom";
 
-const router = createBrowserRouter(
+const router = HashRouter(
   [
     {
       path: "/portfolio",
@@ -20,7 +20,6 @@ const router = createBrowserRouter(
       element: <App />,
     },
   ],
-  { basename: import.meta.env.DEV ? "/" : "/react-vite-gh-pages/" }
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
    <React.StrictMode>
