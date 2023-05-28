@@ -1,11 +1,14 @@
+import { useState } from "react";
 import "./Contacts.css";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import Checkbox from "@mui/material/Checkbox";
 import { customTheme } from "../../assets/styleMUI";
 import { ThemeProvider } from "@mui/material/styles";
-
+import contacts from "../../assets/img/Contacts/contacts.svg";
+import circles from "../../assets/img/Contacts/Circles/circles.svg";
 const validationSchema = yup.object({
   firstname: yup
     .string("Enter your name")
@@ -38,14 +41,18 @@ const Contacts = () => {
       alert(JSON.stringify(values, null, 2));
     },
   });
-
+  const [checked, setChecked] = useState(true);
+    const handleChange = (event) => {
+      setChecked(event.target.checked);
+  };
+  
   return (
     <div className="contacts">
       <div className="contacts_block_img">
         <div className="contacts_block_title">{contactUs}</div>
-        <div className="contacts_img"></div>
+        <img className="contacts_img" src={contacts}></img>
       </div>
-
+      <img className="contacts_bg-circles" src={circles}></img>
       <form className="contact_form" onSubmit={formik.handleSubmit}>
         <ThemeProvider theme={customTheme}>
           <div className="contact_form_input">
@@ -122,12 +129,15 @@ const Contacts = () => {
               error={formik.touched.message && Boolean(formik.errors.message)}
               helperText={formik.touched.message && formik.errors.message}
             />
-            <Button
-              variant="contained"
-              type="submit"
-            >
-              Submit
-            </Button>
+            <div className="contacts__checkbox_block">
+              <Checkbox checked={checked} onChange={handleChange} />
+              <div className="contacts__checkbox-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <Button variant="contained" type="submit">
+                Send
+              </Button>
+            </div>
           </div>
         </ThemeProvider>
       </form>

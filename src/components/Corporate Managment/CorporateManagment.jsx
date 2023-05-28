@@ -1,14 +1,14 @@
 import "./CorporateManagment.css";
 import Card from "../Service/Card";
 import Title from "../Service/Title";
-
+import city from "../../assets/img/Managment/city.png";
 function CorporateManagment() {
 
   return (
     <div className="managment">
       <img
         className="managment__img-city"
-        src="./city.png"
+        src={city}
       ></img>
       <div className="managment__card-block">
         <Card className="managment__card managment__card-gold">

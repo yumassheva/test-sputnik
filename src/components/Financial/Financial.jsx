@@ -3,6 +3,10 @@ import "../Header/Header.css";
 import "../Financial/Financial.css";
 import Card from "../Service/Card";
 import Title from "../Service/Title";
+import img_1 from "../../assets/img/Financial/img_1/financial1.png";
+import img_2 from "../../assets/img/Financial/img_2/financial2.png";
+import img_3 from "../../assets/img/Financial/img_3/financial3.png";
+import img_4 from "../../assets/img/Financial/img_4/financial4.png";
 
 function Financial() {
   return (
@@ -27,7 +31,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"01"}
             />
-            <img className="coin-img" src="./financial1.png"></img>
+            <img className="coin-img" src={img_1}></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -40,7 +44,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"02"}
             />
-            <img className="coin-img" src="./financial2.png"></img>
+            <img className="coin-img" src={img_2}></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -53,7 +57,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"03"}
             />
-            <img className="coin-img" src="./financial3.png"></img>
+            <img className="coin-img" src={img_3}></img>
           </div>
           <Title
             titleClassName={"financial__card-title"}
@@ -66,7 +70,7 @@ function Financial() {
               titleClassName={"card_number card_number_left"}
               titleText={"04"}
             />
-            <img className="coin-img" src="./financial4.png"></img>
+            <img className="coin-img" src={img_4}></img>
           </div>
           <Title titleClassName={"financial__card-title"} titleText={"IPO’s"} />
         </Card>

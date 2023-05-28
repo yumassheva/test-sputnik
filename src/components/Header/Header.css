@@ -24,6 +24,21 @@ z-index: 3;
     font-weight: 400;
     line-height: 28px;
 }
+.header__links_decor{
+    border-bottom: 3px solid transparent;
+    box-sizing: border-box;
+    padding-bottom: 12px;
+}
+ .header__links_decor_active{
+    border-bottom: 3px solid #B09368;
+}
+.header__links_lines{
+    background-color: #fff;
+    height: 28px;
+    margin-bottom: 15px;
+    opacity: .3;
+    width: 1px;
+}
 @media (max-width: 1250px) {
 .header{
     padding: 40px 40px 0;
@@ -41,5 +56,15 @@ height: 40px;
     gap:16px;
     font-size: 12px;
 line-height: 18px;
+}
+.header__links_decor{
+    border-bottom: none;
+}
+.header__links_decor:active{
+    border-bottom: none;
+}
+.header__links_lines{
+        height: 18px;
+    margin: 0;
 }
 }

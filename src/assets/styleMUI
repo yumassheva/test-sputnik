@@ -12,8 +12,20 @@ const customTheme = () =>
         styleOverrides: {
           root: {
             backgroundColor: "#B09368",
-          }
-        }
+            borderRadius: 0,
+            textTransform: "initial",
+          },
+        },
+      },
+      MuiCheckbox: {
+        styleOverrides: {
+          root: {
+            color: "#B09368",
+            "&.Mui-checked": {
+              color: "#B09368",
+            },
+          },
+        },
       },
       MuiTextField: {
         styleOverrides: {
@@ -54,7 +66,7 @@ const customTheme = () =>
           input: {
             paddingBottom: "16px",
             paddingTop: "0px",
-          }
+          },
         },
       },
       MuiInput: {

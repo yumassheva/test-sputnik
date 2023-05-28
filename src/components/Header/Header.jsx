@@ -1,6 +1,6 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/img/Header/logo.svg";
 function Header() {
   const portfolio = "PORTFOLIO";
   const services = "SERVICES";
@@ -8,12 +8,20 @@ function Header() {
   return (
     <div className="header">
       <a className="header__logo-box">
-        <img alt='logo' className="header__logo" src="./logo.svg"></img>
+        <img alt="logo" className="header__logo" src={logo}></img>
       </a>
       <div className="header__links">
-        <Link to={"/portfolio"}>{portfolio}</Link>
-        <Link to={"/"}>{services}</Link>
-        <Link to={"/team"}>{team}</Link>
+        <Link className="header__links_decor" to={"/portfolio"}>
+          {portfolio}
+        </Link>
+        <div className="header__links_lines"></div>
+        <Link className="header__links_decor" to={"/"}>
+          {services}
+        </Link>
+        <div className="header__links_lines"></div>
+        <Link className="header__links_decor" to={"/team"}>
+          {team}
+        </Link>
       </div>
     </div>
   );
